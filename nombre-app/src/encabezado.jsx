@@ -1,16 +1,24 @@
 import miImagen from './assets/logo.png';
+import iconoFacebook from './assets/facebook.png';
+import iconoInstagram from './assets/instagram.png';
+import iconoYoutube from './assets/youtube.png';
+
+import './encabezado.css';
+
+
 function Encabezado(){
     return (
-        <div>
+        <div className='encabezado'>
             <Logotipo/>
             <Menu/>
+            <Redes/>
         </div>
     )
 }
 
 function Logotipo(){
     return(
-        <div>
+        <div className='logo'>
             <img src={miImagen} alt="logotipo" />
         </div>
     )
@@ -18,7 +26,7 @@ function Logotipo(){
 
 function Menu(){
     return(
-        <div>
+        <div className='menu'>
             <ul>
                 <li>Inicio</li>
                 <li>Acerca de</li>
@@ -32,12 +40,11 @@ function Menu(){
 
 function Redes(){
     return(
-        <div>
+        <div className='redes'>
             <ul>
-                <li>Facebook</li>
-                <li>Whatsapp</li>
-                <li>Instagram</li>
-                <li>Youtube</li>
+                <li><img src={iconoFacebook} alt="Facebook" /></li>
+                <li><img src={iconoInstagram} alt="Instagram" /></li>
+                <li><img src={iconoYoutube} alt="YouTube" /></li>
             </ul>
         </div>
     )

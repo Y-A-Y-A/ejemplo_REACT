@@ -1,0 +1,46 @@
+.footerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #2C6E49; /* Verde oscuro para contraste */
+    padding: 30px 50px;
+    color: #D8F3DC; /* Texto suave que combina */
+    gap: 40px;
+    border-top: 5px solid #A9E5BB; /* toque decorativo */
+    flex-wrap: wrap;
+}
+
+/* Cada bloque del footer */
+.footer {
+    flex: 1;
+}
+
+/* Títulos */
+.footer h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #D8F3DC; /* mismo verde suave para consistencia */
+}
+
+/* Texto adicional, si hubiera párrafos o links */
+.footer p, .footer a {
+    color: #BFE8C8; /* Verde ligeramente más claro para leer bien */
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer a:hover {
+    color: #ffffff; /* un hover que destaque */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footerDiv {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+}

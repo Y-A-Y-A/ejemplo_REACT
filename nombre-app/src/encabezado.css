@@ -1,0 +1,51 @@
+/* Encabezado principal */
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b5d8ba; /* verde pastel */
+  padding: 10px 30px;
+}
+
+/* Logo */
+.logo img {
+  height: 70px;
+}
+
+/* Menú */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  color: #2D6A4F;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  color: #1B4332;
+}
+
+/* Redes sociales */
+.redes ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.redes img {
+  width: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.redes img:hover {
+  transform: scale(1.15);
+}

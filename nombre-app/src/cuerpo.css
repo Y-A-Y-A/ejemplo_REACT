@@ -1,0 +1,52 @@
+#rectangulo {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #D8F3DC; /* Fondo verde suave */
+    flex-wrap: wrap; /* Para que se adapte a pantallas pequeñas */
+}
+
+.cuadro1, .cuadro2, .cuadro3 {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    width: 30%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* sombra más suave */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animación hover */
+.cuadro1:hover,
+.cuadro2:hover,
+.cuadro3:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos */
+.cuadro1 h2,
+.cuadro2 h2,
+.cuadro3 h2 {
+    color: #2C6E49; /* Verde oscuro para contraste */
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+/* Texto */
+.cuadro1 p,
+.cuadro2 p,
+.cuadro3 p {
+    color: #4F6D5A; /* Verde medio para armonía */
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cuadro1, .cuadro2, .cuadro3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+

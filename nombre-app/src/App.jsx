@@ -1,13 +1,15 @@
-import Expresiones from "./assets/expresiones";
 import Encabezado from "./encabezado";
+import Cuerpo from "./cuerpo";
+import Footer from "./footer";
+import Body from "./body";
 
 function APP(){
   return(
     <div>
       <Encabezado/>
-      <Expresiones />
-      <h1>5C DSM</h1>
-      <h2>yaya</h2>
+      <Cuerpo/>
+      <Body/>
+      <Footer/>
     </div>
   ); 
   

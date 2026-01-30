@@ -1,0 +1,13 @@
+.body {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #8cca96; /* Fondo verde suave */
+    flex-wrap: wrap; /* Para que se adapte a pantallas pequeñas */
+}
+
+.body h3 {
+color: #2C6E49; /* Verde oscuro para contraste */
+    margin-bottom: 12px;
+    font-size: 20px;
+}
